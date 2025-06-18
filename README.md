@@ -3,6 +3,7 @@
 An intelligent chatbot that extracts, summarizes, answers questions, and visualizes data from uploaded financial PDFs — powered by **LangChain**, **GPT-4o**, **Flask**, and **React**.
 
 [![Watch Demo](https://img.youtube.com/vi/04OIAvRQmO4/0.jpg)](https://www.youtube.com/watch?v=04OIAvRQmO4)
+*Demo video showcasing financial document upload and chatbot Q&A focused on finance-based PDFs.*
 
 ---
 
