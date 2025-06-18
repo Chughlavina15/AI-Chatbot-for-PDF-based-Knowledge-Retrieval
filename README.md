@@ -1,4 +1,4 @@
-# AI-Powered Finance Chatbot
+# AI-Chatbot for PDF based Knowledge Retrieval
 
 An intelligent chatbot that extracts, summarizes, answers questions, and visualizes data from uploaded financial PDFs — powered by **LangChain**, **GPT-4o**, **Flask**, and **React**.
 
