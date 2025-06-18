@@ -1,87 +1,39 @@
-# Finance Question Answer Bot
+# AI-Powered Finance Chatbot
 
-This project implements a chatbot that allows users to upload a financial document, generates a summary, and answers questions based on the uploaded document. It also creates visualizations for the user based on the numbers given the document.
+An intelligent chatbot that extracts, summarizes, answers questions, and visualizes data from uploaded financial PDFs — powered by **LangChain**, **GPT-4o**, **Flask**, and **React**.
 
-[![Finance Question Answer Bot](https://img.youtube.com/vi/04OIAvRQmO4?si=CRfsp67PFcEiRp2d/0.jpg)](https://www.youtube.com/watch?v=04OIAvRQmO4?si=CRfsp67PFcEiRp2d)
+[![Watch Demo](https://img.youtube.com/vi/04OIAvRQmO4/0.jpg)](https://www.youtube.com/watch?v=04OIAvRQmO4)
 
 ---
 
 ## Features
 
-1. **Document Upload**:
-   - Users can upload a document (e.g., text or PDF).
-   - The backend processes the document and provides a summary.
-
-2. **Document-based Q&A**:
-   - Users can ask questions about the uploaded document.
-   - The chatbot uses the document’s content to generate accurate responses.
-
-3. **Visualization of Data**:
-   - Users can ask for visualization of data from the document.
-   - The chatbot retrieves the required data and creates a bar plot for the User.
+- **📄 Upload PDFs** – Extract and summarize financial data.
+- **💬 Ask Questions** – Chatbot answers queries using document context.
+- **📊 Visualize Data** – Auto-generates bar charts for numeric insights.
+- **🔗 LangChain** – Manages document context and follow-ups.
+- **🐳 Dockerized** – Easy to build and run via Docker Compose.
 
 ---
 
-## Technologies Used
+## Tech Stack
 
-### Front-end
-- **React**:
-  - Build a dynamic and interactive user interface.
-  - Handle user inputs and display responses from the chatbot.
-  
-### Back-end
-- **Flask Chat-GPT-4O**:
-  - Communicate with the front-end via REST APIs.
-
-- **Chat-GPT-4O**:
-  - Handle document processing, summarization, and Q&A.
+- **Frontend**: React, Axios
+- **Backend**: Flask, OpenAI GPT-4o, LangChain, Matplotlib, PyPDF2
+- **DevOps**: Docker, Docker Compose
 
 ---
 
-## Setup Instructions
+## Quick Start (Docker)
 
-### Pre-requisites
+1. Add your OpenAI key to `server/.env`: 
+`OPENAI_API_KEY=your-key-here `
 
-1. Install **Node.js** (for the front-end).
-2. Install **Python 3.7+** and **pip** (for the back-end).
-4. Get your **OPEN AI API Key**
-3. Install **virtualenv** (optional but recommended for Python dependency management).
 
-### Steps to Run the Application
+2. Run the app:
+```bash
+docker-compose up --build
 
-#### 1. Set up the Server (Back-end)
-1. Create and activate a Python virtual environment (optional but recommended):
-    ```bash
-    python3 -m venv venv
-    source venv/bin/activate   # For Linux/Mac
-    venv\Scripts\activate      # For Windows
-
-2. Install the required Python libraries:
-    ```bash
-    pip install -r requirements.txt
-
-3. Navigate to the `server` directory:
-   ```bash
-   cd server
-
-4. Run the server using the following command:
-    ```bash
-    python3 app.py
-
-#### 2. Set up the Chatbot UI (Front-end)
-1. Navigate to the `chatbot-ui` directory:
-    ```bash
-    cd chatbot-ui
-
-2. Install the required Node modules
-    ```bash
-    npm install
-
-3. Run the client using the following command:
-    ```bash
-    npm start
-
----
 
 ## Usage Instructions
 
